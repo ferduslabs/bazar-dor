@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
+  basePath: "/bazar-dor",
+  assetPrefix: "/bazar-dor/",
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
@@ -8,6 +12,7 @@ const nextConfig = {
       },
     ],
   },
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;
