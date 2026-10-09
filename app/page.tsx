@@ -4,6 +4,8 @@ import ProductCard from "@/components/ProductCard";
 import Skeleton from "@/components/Skeleton";
 import { Suspense } from "react";
 
+export const dynamic = "force-static";
+
 async function ProductSections() {
   let products: Product[] = [];
 
